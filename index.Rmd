@@ -1,5 +1,5 @@
 ---
-title: "Vizualización de las Orquideas en Costa Rica en Areas Silvestres Protegidas"
+title: "Visualización de las Orquideas en Costa Rica en Areas Silvestres Protegidas"
 author: "Yustin Leiva"
 date: "11/7/2021"
 output: html_document
