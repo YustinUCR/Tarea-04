@@ -48,7 +48,7 @@ provincias <-
 # Asignación del sistema de coordenadas
 st_crs(orquideas) = 4326
 st_crs(asp) = 4326
-st_crs
+
  
 
 # (15%) En el conjunto de datos de registros de presencia, elimine los registros con un valor mayor que 1000 (mil) en el campo coordinateUncertaintyInMeters. 
@@ -106,11 +106,16 @@ asp_registros <-
 
 # En un mapa Leaflet, muestre las siguientes capas y controles:
 
+
+# Paleta de colores
+
 registros_colores <-
   colorNumeric(palette = "YlOrBr",
                domain = asp_registros$species,
                na.color = "transparent")
 
+# Obtencion de capa de altitud
+ 
 alt <- getData(
   "worldclim",
   var = "alt",
